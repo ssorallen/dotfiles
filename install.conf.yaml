@@ -1,0 +1,5 @@
+- link:
+    ~/.bash: .bash/
+    ~/.bash_profile: .bash_profile
+    ~/.bashrc: .bashrc
+    ~/.vimrc: .vimrc
