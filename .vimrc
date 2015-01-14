@@ -13,6 +13,19 @@ set ruler
 set nu
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Searching
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Highlight search matches
+set hlsearch
+
+" Case-insensitive search
+set ignorecase
+
+" Press Space to turn off highlighting and clear any message already displayed.
+noremap <silent> <Space> :silent noh<Bar>echo<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
