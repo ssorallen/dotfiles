@@ -19,8 +19,12 @@ set nu
 " Highlight search matches
 set hlsearch
 
-" Case-insensitive search
+" Incrementally search while typing
+set incsearch
+
+" Case-insensitive search except when contains a capital letter
 set ignorecase
+set smartcase
 
 " Press Space to turn off highlighting and clear any message already displayed.
 noremap <silent> <Space> :silent noh<Bar>echo<CR>
