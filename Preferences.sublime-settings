@@ -7,6 +7,9 @@
   // Add a new line at EOF if it doesn't exist
   "ensure_newline_at_eof_on_save": true,
 
+  // Selected text will be copied into the find panel when it’s shown
+  "find_selected_text": true,
+
   "rulers": [80, 100],
 
   // Use two spaces instead of tabs
