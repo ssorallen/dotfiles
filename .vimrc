@@ -38,7 +38,7 @@ syntax enable
 colorscheme desert
 set background=dark
 
-" Highlight columns beyond column 80
+" Highlight columns 81 and all beyond 101. These act as column width guides.
 highlight ColorColumn guibg=#2d2d2d ctermbg=236
 let &colorcolumn="81,".join(range(101,999),",")
 
