@@ -39,8 +39,8 @@ colorscheme desert
 set background=dark
 
 " Highlight columns beyond column 80
-execute "set colorcolumn=" . join(range(81,335), ',')
-hi ColorColumn guibg=#2d2d2d ctermbg=236
+highlight ColorColumn guibg=#2d2d2d ctermbg=236
+let &colorcolumn="81,".join(range(101,999),",")
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
