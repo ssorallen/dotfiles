@@ -38,6 +38,10 @@ syntax enable
 colorscheme desert
 set background=dark
 
+" Highlight columns beyond column 80
+execute "set colorcolumn=" . join(range(81,335), ',')
+hi ColorColumn guibg=#2d2d2d ctermbg=236
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
