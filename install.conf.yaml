@@ -10,3 +10,4 @@
 
 - shell:
     - ["git submodule update --init --recursive", "Installing/updating submodules"]
+    - ["./.osx", "Setting OS X defaults"]
