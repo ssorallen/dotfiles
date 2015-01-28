@@ -45,6 +45,9 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
+# Put the dock on the left side of the screen
+defaults write com.apple.dock orientation -string left
+
 # Hot corners
 # Possible values:
 #  0: no-op
