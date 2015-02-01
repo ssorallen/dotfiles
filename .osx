@@ -45,6 +45,12 @@ defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
 
+# Always open everything in Finder's list view. This is important.
+defaults write com.apple.finder FXPreferredViewStyle Nlsv
+
+# Show the ~/Library folder.
+chflags nohidden ~/Library
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
