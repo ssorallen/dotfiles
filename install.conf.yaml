@@ -5,6 +5,7 @@
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
     ~/.gemrc: .gemrc
+    ~/.gitignore: .gitignore
     ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings: Preferences.sublime-settings
     ~/.vimrc: .vimrc
 
