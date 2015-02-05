@@ -17,5 +17,8 @@
 
   // Use two spaces instead of tabs
   "tab_size": 2,
-  "translate_tabs_to_spaces": true
+  "translate_tabs_to_spaces": true,
+
+  // Remove trailing white space when files are saved
+  "trim_trailing_white_space_on_save": true
 }
