@@ -1,11 +1,17 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by file type specific settings.
 {
+  // Improve sidebar readability with bold folder labels
+  "bold_folder_labels": true,
+
   // Draw "invisible" whitespace characters
   "draw_white_space": "all",
 
   // Add a new line at EOF if it doesn't exist
   "ensure_newline_at_eof_on_save": true,
+
+  // Give color clue for modified tab in addition to default X -> O close button
+  "highlight_modified_tabs": true,
 
   // Don't need VI-like bindings
   "ignored_packages": ["Vintage"],
