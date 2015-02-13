@@ -12,4 +12,3 @@
 
 - shell:
     - ["git submodule update --init --recursive", "Installing/updating submodules"]
-    - ["git submodule update --remote", "Updating remote tracking submodules"]
