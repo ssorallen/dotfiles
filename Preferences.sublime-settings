@@ -10,6 +10,9 @@
   // Add a new line at EOF if it doesn't exist
   "ensure_newline_at_eof_on_save": true,
 
+  // Copy selected text into the find panel when it’s shown
+  "find_selected_text": true,
+
   // Give color clue for modified tab in addition to default X -> O close button
   "highlight_modified_tabs": true,
 
