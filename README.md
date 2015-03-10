@@ -11,6 +11,20 @@ will link is defined in "install.conf.yml".
 1. `git clone https://github.com/ssorallen/dotfiles.git`
 2. `./install`
 
+### Configuring a Git user
+
+The ".gitconfig" file should be symlinked to your home directory but not contain
+any user-specific info so that it can be configured per-computer and not checked
+into version control. This allows, for example, your home and work computers to
+use the same Git configuration but different Git users.
+
+1. Add a file named ".gituser" in your home directory on each computer you use
+2. Fill in your user information in that file
+
+        [user]
+          name = Clark Kent
+          email = ckent@dailyplanet.com
+
 ### Setting Mac OS X Defaults
 
 ".osx" sets my preferred settings for OS X itself. The default `./install`
