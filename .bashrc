@@ -3,7 +3,15 @@ alias afk="pmset displaysleepnow"
 
 alias g="git"
 alias ls="ls -aGp"
-alias server="python -m SimpleHTTPServer"
+
+# Start a SimpleHTTPServer on 127.0.0.1 (rather than the default 0.0.0.0). The
+# first argument after the command can be provided to change the port.
+http () {
+  PORT=${1:-8000}
+  echo "Serving HTTP on 127.0.0.1 port ${PORT} ..."
+  python -c "import BaseHTTPServer as bhs, SimpleHTTPServer as shs; bhs.HTTPServer(('127.0.0.1', ${PORT}), shs.SimpleHTTPRequestHandler).serve_forever()"
+}
+alias server=http
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
