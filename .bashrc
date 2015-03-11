@@ -1,3 +1,6 @@
+# Sleep the display, which then requires a password (go AFK)
+alias afk="pmset displaysleepnow"
+
 alias g="git"
 alias ls="ls -aGp"
 alias server="python -m SimpleHTTPServer"
