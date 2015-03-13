@@ -1,6 +1,6 @@
 This is a collection of my preferred settings mostly targeted at making
-OS X pleasant for web development in [Sublime Text 3](http://www.sublimetext.com/3),
-Git, and VIM.
+OS X 10.10 Yosemite pleasant for web development in
+[Sublime Text 3](http://www.sublimetext.com/3), Git, and VIM.
 
 ## Installation
 
