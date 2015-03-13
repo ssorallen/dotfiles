@@ -2,10 +2,14 @@
   path = ~/.gituser
 
 [alias]
+  a = add
   clean-pr = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
   clean-merged = "!git branch --merged | grep -v '\\*\\|master' | xargs -n 1 git branch -d"
+  c = commit
   co = checkout
+  d = diff
   pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+  s = status
 
 [color]
   diff = auto
