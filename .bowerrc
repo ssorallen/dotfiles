@@ -1,3 +1,4 @@
 {
-  "analytics": false
+  "analytics": false,
+  "directory": "components"
 }
