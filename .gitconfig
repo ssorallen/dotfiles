@@ -14,7 +14,10 @@
 [color]
   diff = auto
   status = auto
-  branch = auto 
+  branch = auto
+
+[core]
+  excludesfile = ~/.gitignore
 
 [credential]
   helper = osxkeychain
