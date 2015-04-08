@@ -10,6 +10,9 @@
     ~/.gitignore: .gitignore
     ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings: Preferences.sublime-settings
     ~/.vimrc: .vimrc
+    ~/bin/subl:
+        create: true
+        path: "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 - shell:
     - ["git submodule update --init --recursive", "Installing/updating submodules"]

@@ -19,6 +19,10 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source $GITAWAREPROMPT/main.sh
 
+# Allow a user-specific bin directory as a subdir of the home directory. This is
+# used for linking to Sublime Text's `subl` shortcut, for example.
+export PATH=$PATH:~/bin
+
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 export PS1="\[$(tput bold)\]\[$(tput setaf 2)\]\[$(tput setaf 3)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 3)\]\h \[$(tput setaf 6)\]\w\[$(tput setaf 2)\]\[$(tput setaf 4)\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
 
