@@ -1,7 +1,16 @@
 # Sleep the display, which then requires a password (go AFK)
 alias afk="pmset displaysleepnow"
 
+# Simpler Git access
 alias g="git"
+
+# Simpler Mercurial access
+alias h="hg"
+
+# Preferred (and hopefully improved) `ls` output.
+# * -a: include directories starting with a dot (.)
+# * -G: enable colorized output
+# * -p: write a slash (/) after each directory
 alias ls="ls -aGp"
 
 # Start a SimpleHTTPServer on 127.0.0.1 (rather than the default 0.0.0.0). The
@@ -25,4 +34,3 @@ export PATH=$PATH:~/bin
 
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 export PS1="\[$(tput bold)\]\[$(tput setaf 2)\]\[$(tput setaf 3)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 3)\]\h \[$(tput setaf 6)\]\w\[$(tput setaf 2)\]\[$(tput setaf 4)\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
-
