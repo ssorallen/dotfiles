@@ -7,11 +7,20 @@ alias g="git"
 # Simpler Mercurial access
 alias h="hg"
 
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then
+  # GNU `ls`
+  colorflag="--color"
+else
+  # OS X `ls`
+  colorflag="-G"
+fi
+
 # Preferred (and hopefully improved) `ls` output.
 # * -a: include directories starting with a dot (.)
-# * -G: enable colorized output
+# * -colorflag: enable colorized output
 # * -p: write a slash (/) after each directory
-alias ls="ls -aGp"
+alias ls="ls -ap ${colorflag}"
 
 # Start a SimpleHTTPServer on 127.0.0.1 (rather than the default 0.0.0.0). The
 # first argument after the command can be provided to change the port.
