@@ -18,12 +18,14 @@ any user-specific info so that it can be configured per-computer and not checked
 into version control. This allows, for example, your home and work computers to
 use the same Git configuration but different Git users.
 
-1. Add a file named ".gituser" in your home directory on each computer you use
-2. Fill in your user information in that file
+1. Copy the `.gituser` template to your home directory
+
+        cp .gituser.template ~/.gituser
+2. Edit the copy in your home directory to your real information
 
         [user]
-          name = Clark Kent
-          email = ckent@dailyplanet.com
+          name = Lois Lane
+          email = llane@dailyplanet.com
 
 ### Setting Mac OS X Defaults
 
