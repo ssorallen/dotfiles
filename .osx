@@ -116,6 +116,13 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled -bool true
 
 ###############################################################################
+# XCode                                                                       #
+###############################################################################
+
+# Prevent XCode from reopening potentially large workspaces on launch
+defaults write com.apple.dt.Xcode ApplePersistenceIgnoreState YES
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
