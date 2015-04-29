@@ -13,6 +13,9 @@
   // Copy selected text into the find panel when it’s shown
   "find_selected_text": true,
 
+  // Slightly larger (12px default) text
+  "font_size": 13,
+
   // Give color clue for modified tab in addition to default X -> O close button
   "highlight_modified_tabs": true,
 
