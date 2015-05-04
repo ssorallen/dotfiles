@@ -16,6 +16,13 @@ else
   colorflag="-G"
 fi
 
+# Initialize [`rbenv`](https://github.com/sstephenson/rbenv) to manage Ruby
+# versions if it exists.
+if which rbenv > /dev/null; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)";
+fi
+
 # Preferred (and hopefully improved) `ls` output.
 # * -a: include directories starting with a dot (.)
 # * -colorflag: enable colorized output
