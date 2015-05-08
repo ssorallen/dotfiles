@@ -1,0 +1,4 @@
+%include ~/.hguser
+
+[alias]
+rv = revert --no-backup
