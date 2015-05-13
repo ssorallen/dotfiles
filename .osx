@@ -35,8 +35,11 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
 
+# Set a shorter delay until key repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 14
+
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 0.3
 
 ###############################################################################
 # Screen                                                                      #
