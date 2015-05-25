@@ -7,12 +7,21 @@ alias g="git"
 # Simpler Mercurial access
 alias h="hg"
 
+# Add the Heroku Toolbelt to the PATH if it is installed
+if [ -d "/usr/local/heroku/bin" ]; then
+  export PATH="/usr/local/heroku/bin:$PATH"
+fi
+
 # Initialize [`rbenv`](https://github.com/sstephenson/rbenv) to manage Ruby
 # versions if it exists.
 if which rbenv > /dev/null; then
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)";
 fi
+
+# Allow a user-specific bin directory as a subdir of the home directory. This is
+# used for linking to Sublime Text's `subl` shortcut, for example.
+export PATH=$PATH:~/bin
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then
@@ -42,10 +51,6 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source $GITAWAREPROMPT/main.sh
-
-# Allow a user-specific bin directory as a subdir of the home directory. This is
-# used for linking to Sublime Text's `subl` shortcut, for example.
-export PATH=$PATH:~/bin
 
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 export PS1="\[$(tput bold)\]\[$(tput setaf 2)\]\[$(tput setaf 3)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 3)\]\h \[$(tput setaf 6)\]\w\[$(tput setaf 2)\]\[$(tput setaf 4)\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
