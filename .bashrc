@@ -7,6 +7,13 @@ alias g="git"
 # Simpler Mercurial access
 alias h="hg"
 
+# Initialize [`rbenv`](https://github.com/sstephenson/rbenv) to manage Ruby
+# versions if it exists.
+if which rbenv > /dev/null; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)";
+fi
+
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then
   # GNU `ls`
@@ -14,13 +21,6 @@ if ls --color > /dev/null 2>&1; then
 else
   # OS X `ls`
   colorflag="-G"
-fi
-
-# Initialize [`rbenv`](https://github.com/sstephenson/rbenv) to manage Ruby
-# versions if it exists.
-if which rbenv > /dev/null; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)";
 fi
 
 # Preferred (and hopefully improved) `ls` output.
