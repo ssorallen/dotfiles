@@ -1,4 +1,7 @@
 %include ~/.hguser
 
 [alias]
+c = commit
+d = diff
 rv = revert --no-backup
+s = status
