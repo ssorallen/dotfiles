@@ -1,0 +1,30 @@
+"*":
+  core:
+    disabledPackages: [
+      "deprecation-cop"
+      "incompatible-packages"
+      "metrics"
+      "styleguide"
+      "timecop"
+    ]
+    themes: [
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
+    ]
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  welcome:
+    showOnStartup: false
+  nuclide:
+    remoteProjectsConfig: []
+  editor:
+    fontSize: 12
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    preferredLineLength: 100
+  tabs:
+    enableVcsColoring: true
+    usePreviewTabs: true
+  linter:
+    showErrorPanel: false

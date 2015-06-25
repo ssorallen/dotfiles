@@ -5,6 +5,7 @@
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
     ~/.bowerrc: .bowerrc
+    ~/.atom/config.cson: atom/config.cson
     ~/.gemrc: .gemrc
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
