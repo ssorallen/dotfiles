@@ -6,6 +6,7 @@
     ~/.bashrc: .bashrc
     ~/.bowerrc: .bowerrc
     ~/.atom/config.cson: atom/config.cson
+    ~/.atom/keymap.cson: atom/keymap.cson
     ~/.gemrc: .gemrc
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
