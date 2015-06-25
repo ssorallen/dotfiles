@@ -6,6 +6,7 @@
       "metrics"
       "styleguide"
       "timecop"
+      "tree-view"
     ]
     themes: [
       "one-dark-ui"
