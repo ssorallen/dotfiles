@@ -7,6 +7,10 @@ alias g="git"
 # Simpler Mercurial access
 alias h="hg"
 
+# "exclude grep". An alias for `grep` that excludes common directories that
+# shouldn't be searched.
+alias xg="grep --exclude-dir=node_modules -r"
+
 # Add the Heroku Toolbelt to the PATH if it is installed
 if [ -d "/usr/local/heroku/bin" ]; then
   export PATH="/usr/local/heroku/bin:$PATH"
