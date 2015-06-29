@@ -19,13 +19,14 @@
   nuclide:
     remoteProjectsConfig: []
   editor:
-    fontSize: 12
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
     preferredLineLength: 100
+    fontSize: 12
   tabs:
     enableVcsColoring: true
     usePreviewTabs: true
   linter:
+    lintOnFly: false
     showErrorPanel: false
