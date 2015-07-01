@@ -1,6 +1,7 @@
 %include ~/.hguser
 
 [alias]
+a = add
 c = commit
 d = diff
 rv = revert --no-backup
