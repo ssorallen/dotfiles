@@ -17,8 +17,8 @@
 
   "folder_exclude_patterns": [".git", ".hg", "_site"],
 
-  // Slightly larger (12px default) text
-  "font_size": 13,
+  // Hard set font size to the default (12px)
+  "font_size": 12,
 
   // Give color clue for modified tab in addition to default X -> O close button
   "highlight_modified_tabs": true,
