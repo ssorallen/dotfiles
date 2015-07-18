@@ -1,3 +1,2 @@
-'atom-text-editor:not(.mini)':
-  'alt': 'nuclide-click-to-symbol:activate'
-  'cmd': 'unset!'
+'body':
+  'cmd-esc': 'window:reload'
