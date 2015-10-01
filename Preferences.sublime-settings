@@ -1,6 +1,8 @@
 {
 	"bold_folder_labels": true,
+	"caret_extra_width": 1,
 	"color_scheme": "Packages/Babel/Monokai Phoenix.tmTheme",
+	"drag_text": false,
 	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -23,6 +25,7 @@
 		80,
 		100
 	],
+	"scroll_past_end": true,
 	"spacegray_sidebar_font_large": true,
 	"tab_size": 2,
 	"theme": "Spacegray Eighties.sublime-theme",
