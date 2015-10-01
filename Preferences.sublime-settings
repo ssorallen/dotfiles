@@ -1,37 +1,31 @@
-// Settings in here override those in "Default/Preferences.sublime-settings",
-// and are overridden in turn by file type specific settings.
 {
-  // Improve sidebar readability with bold folder labels
-  "bold_folder_labels": true,
-
-  "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
-
-  // Draw "invisible" whitespace characters
-  "draw_white_space": "all",
-
-  // Add a new line at EOF if it doesn't exist
-  "ensure_newline_at_eof_on_save": true,
-
-  // Copy selected text into the find panel when it’s shown
-  "find_selected_text": true,
-
-  "folder_exclude_patterns": [".git", ".hg", "_site"],
-
-  // Hard set font size to the default (12px)
-  "font_size": 12,
-
-  // Give color clue for modified tab in addition to default X -> O close button
-  "highlight_modified_tabs": true,
-
-  // Don't need VI-like bindings
-  "ignored_packages": ["Vintage"],
-
-  "rulers": [80, 100],
-
-  // Use two spaces instead of tabs
-  "tab_size": 2,
-  "translate_tabs_to_spaces": true,
-
-  // Remove trailing white space when files are saved
-  "trim_trailing_white_space_on_save": true
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Babel/Monokai Phoenix.tmTheme",
+	"draw_white_space": "all",
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".git",
+		".hg",
+		"_site",
+		"node_modules"
+	],
+	"font_size": 13,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80,
+		100
+	],
+	"spacegray_sidebar_font_large": true,
+	"tab_size": 2,
+	"theme": "Spacegray Eighties.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
 }
