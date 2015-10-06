@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
-	"color_scheme": "Packages/Babel/Monokai Phoenix.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",
 	"drag_text": false,
 	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
@@ -14,7 +14,7 @@
 		"_site",
 		"node_modules"
 	],
-	"font_size": 13,
+	"font_size": 12,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[

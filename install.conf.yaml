@@ -15,7 +15,8 @@
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
     ~/.hgrc: .hgrc
-    ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings: Preferences.sublime-settings
+    ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings: 'sublime-text/Preferences.sublime-settings'
+    ~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap: 'sublime-text/Default (OSX).sublime-keymap'
     ~/.vimrc: .vimrc
     ~/bin/subl:
         create: true
