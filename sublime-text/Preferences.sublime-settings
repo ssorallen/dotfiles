@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
-	"color_scheme": "Packages/User/SublimeLinter/Monokai Phoenix (SL).tmTheme",
+	"color_scheme": "Packages/Monokai - Spacegray/Monokai - Spacegray.tmTheme",
 	"drag_text": false,
 	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
@@ -14,7 +14,7 @@
 		"_site",
 		"node_modules"
 	],
-	"font_size": 12,
+	"font_size": 14,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
@@ -26,9 +26,9 @@
 		100
 	],
 	"scroll_past_end": true,
-	"spacegray_sidebar_font_large": true,
+	"spacegray_sidebar_font_xlarge": true,
 	"tab_size": 2,
-	"theme": "Spacegray Eighties.sublime-theme",
+	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }
