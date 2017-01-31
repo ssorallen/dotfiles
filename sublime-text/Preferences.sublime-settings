@@ -1,7 +1,7 @@
 {
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
-	"color_scheme": "Packages/Monokai - Spacegray/Monokai - Spacegray.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai - Spacegray (SL).tmTheme",
 	"drag_text": false,
 	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
