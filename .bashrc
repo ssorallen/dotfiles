@@ -46,7 +46,7 @@ alias ls="ls -ap ${colorflag}"
 # directory if it exists, otherwise falls back to default behavior.
 sbl() {
   sublime_project_file=`find $1 -name "*.sublime-project" -maxdepth 1`
-  if [ $sublime_project_file -z ]
+  if [[ $sublime_project_file == -z ]]
   then
     subl $1
   else
