@@ -73,3 +73,8 @@ export PS1="\[$(tput bold)\]\[$(tput setaf 2)\]\[$(tput setaf 3)\]\u\[$(tput set
 
 # Who doesn't like VIM?
 export EDITOR=vi
+# Disable XON/XOFF in order to enable Ctrl-S forward searching through command
+# history.
+#
+# See http://stackoverflow.com/a/25391867/368697
+[[ $- == *i* ]] && stty -ixon
