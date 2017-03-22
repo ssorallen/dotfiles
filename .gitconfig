@@ -8,7 +8,7 @@
   clean-merged = "!git branch --merged | grep -v '\\*\\|master' | xargs -n 1 git branch -d"
   co = checkout
   d = diff
-  lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(bold)%s%Creset %Cgreen(%cr) %C(bold blue)<%an>%Creset%+b' --abbrev-commit
+  lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(bold)%s%Creset %Cgreen(%cr) %C(bold blue)<%an>' --abbrev-commit
 
   # Check out a pull request from GitHub as a branch named "pr/<Number>"
   pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
