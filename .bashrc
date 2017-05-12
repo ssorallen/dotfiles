@@ -45,6 +45,12 @@ alias ls="ls -ap ${colorflag}"
 # Improved Sublime Text command that opens a .sublime-project file in the target
 # directory if it exists, otherwise falls back to default behavior.
 sbl() {
+  if [[ $# -lt 1 ]]
+  then
+    subl
+    return
+  fi
+
   sublime_project_file=`find $1 -name "*.sublime-project" -maxdepth 1`
   if [[ -z $sublime_project_file ]]
   then
