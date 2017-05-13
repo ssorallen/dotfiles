@@ -15,12 +15,18 @@
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
     ~/.hgrc: .hgrc
+    ~/Library/Application Support/Code/User/keybindings.json:
+      force: true
+      path: 'vscode/keybindings.json'
+    ~/Library/Application Support/Code/User/settings.json:
+      force: true
+      path: 'vscode/settings.json'
     ~/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings: 'sublime-text/Preferences.sublime-settings'
     ~/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap: 'sublime-text/Default (OSX).sublime-keymap'
     ~/.vimrc: .vimrc
     ~/bin/subl:
-        create: true
-        path: "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+      create: true
+      path: "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 
 - shell:
     - ["git submodule update --init --recursive", "Installing/updating submodules"]

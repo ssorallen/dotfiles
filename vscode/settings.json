@@ -1,0 +1,38 @@
+// Place your settings in this file to overwrite the default settings
+{
+    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+    "editor.lineHeight": 17,
+
+    // Controls if the minimap is shown
+    "editor.minimap.enabled": true,
+
+    // Columns at which to show vertical rulers
+    "editor.rulers": [80, 100],
+
+    // Controls how the editor should render whitespace characters, possibilities are 'none',
+    // 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+    "editor.renderWhitespace": "all",
+
+    // The number of spaces a tab is equal to. This setting is overriden based on the file contents
+    // when `editor.detectIndentation` is on.
+    "editor.tabSize": 2,
+
+    // When enabled, insert a final new line at the end of the file when saving it.
+    "files.insertFinalNewline": true,
+
+    // When enabled, will trim trailing whitespace when you save a file.
+    "files.trimTrailingWhitespace": true,
+
+    // Enable/disable JavaScript validation.
+    "javascript.validate.enable": false,
+
+    // Enable usage data and errors to be sent to Microsoft.
+    "telemetry.enableTelemetry": false,
+
+    // Enable crash reports to be sent to Microsoft.
+    // This option requires restart to take effect.
+    "telemetry.enableCrashReporter": false,
+
+    "workbench.colorTheme": "Monokai",
+    "window.zoomLevel": 0
+}

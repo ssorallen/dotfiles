@@ -1,0 +1,5 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  { "key": "cmd+shift+]",         "command": "workbench.action.nextEditor" },
+  { "key": "cmd+shift+[",         "command": "workbench.action.previousEditor" }
+]
