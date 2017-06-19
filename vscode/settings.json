@@ -23,6 +23,9 @@
     // When enabled, will trim trailing whitespace when you save a file.
     "files.trimTrailingWhitespace": true,
 
+    // Enable/disable TypeScript validation.
+    "typescript.validate.enable": false,
+
     // Enable/disable JavaScript validation.
     "javascript.validate.enable": false,
 
