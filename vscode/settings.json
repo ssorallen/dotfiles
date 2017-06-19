@@ -34,5 +34,12 @@
     "telemetry.enableCrashReporter": false,
 
     "workbench.colorTheme": "Monokai",
+
+    // Specifies the icon theme used in the workbench.
+    "workbench.iconTheme": null,
+
+    // Controls if opened editors should show with an icon or not. This requires an icon theme to be enabled as well.
+    "workbench.editor.showIcons": false,
+
     "window.zoomLevel": 0
 }
