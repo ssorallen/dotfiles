@@ -84,3 +84,5 @@ export EDITOR=vi
 #
 # See http://stackoverflow.com/a/25391867/368697
 [[ $- == *i* ]] && stty -ixon
+
+export PATH="$HOME/.yarn/bin:$PATH"
