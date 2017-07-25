@@ -1,4 +1,3 @@
-// Place your settings in this file to overwrite the default settings
 {
     // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
     "editor.lineHeight": 17,
@@ -36,7 +35,7 @@
     // This option requires restart to take effect.
     "telemetry.enableCrashReporter": false,
 
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "Tomorrow Night Blue",
 
     // Specifies the icon theme used in the workbench.
     "workbench.iconTheme": null,
