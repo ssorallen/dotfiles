@@ -41,8 +41,14 @@
     // Specifies the icon theme used in the workbench.
     "workbench.iconTheme": null,
 
-    // Controls if opened editors should show with an icon or not. This requires an icon theme to be enabled as well.
+    // Controls if opened editors should show with an icon or not. This requires an icon theme to be
+    // enabled as well.
     "workbench.editor.showIcons": false,
+
+    // Controls which editor is shown at startup, if none is restored from the previous session.
+    // Select 'none' to start without an editor, 'welcomePage' to open the Welcome page (default),
+    // 'newUntitledFile' to open a new untitled file (only when not opening a folder).
+    "workbench.startupEditor": "newUntitledFile",
 
     "window.zoomLevel": 0
 }
