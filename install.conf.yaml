@@ -4,7 +4,6 @@
     ~/.bash: .bash/
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
-    ~/.bowerrc: .bowerrc
     ~/.atom/config.cson:
       force: true
       path: atom/config.cson
