@@ -19,6 +19,8 @@
     // When enabled, insert a final new line at the end of the file when saving it.
     "files.insertFinalNewline": true,
 
+    "flow.useNPMPackagedFlow": true,
+
     // When enabled, will trim trailing whitespace when you save a file.
     "files.trimTrailingWhitespace": true,
 
