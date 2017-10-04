@@ -35,7 +35,7 @@
     // This option requires restart to take effect.
     "telemetry.enableCrashReporter": false,
 
-    "workbench.colorTheme": "Tomorrow Night Blue",
+    "workbench.colorTheme": "Monokai",
 
     // Specifies the icon theme used in the workbench.
     "workbench.iconTheme": null,
