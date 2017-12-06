@@ -20,12 +20,12 @@ use the same Git configuration but different Git users.
 
 1. Copy the `.gituser` template to your home directory
 
-        cp .gituser.template ~/.gituser
+       cp .gituser.template ~/.gituser
 2. Edit the copy in your home directory to your real information
 
-        [user]
-          name = Lois Lane
-          email = llane@dailyplanet.com
+       [user]
+         name = Lois Lane
+         email = llane@dailyplanet.com
 
 ### Setting Mac OS X Defaults
 
