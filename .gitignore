@@ -1,4 +1,7 @@
+# Ignore OS-specific files
 .DS_Store
+
+# Ignore all of my editor configs so they don't clash with other devs
 *.idea
 *.sublime-project
 *.sublime-workspace
