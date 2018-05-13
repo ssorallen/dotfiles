@@ -1,4 +1,9 @@
 {
+    // Format CSS files on save (using Prettier)
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+
     // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
     "editor.lineHeight": 17,
 
@@ -24,8 +29,10 @@
     // When enabled, will trim trailing whitespace when you save a file.
     "files.trimTrailingWhitespace": true,
 
-    // Enable/disable TypeScript validation.
-    "typescript.validate.enable": false,
+    // Format JavaScript files on save (using Prettier)
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
 
     // Enable/disable JavaScript validation.
     "javascript.validate.enable": false,
@@ -36,6 +43,9 @@
     // Enable crash reports to be sent to Microsoft.
     // This option requires restart to take effect.
     "telemetry.enableCrashReporter": false,
+
+    // Enable/disable TypeScript validation.
+    "typescript.validate.enable": false,
 
     "workbench.colorTheme": "Monokai",
 
