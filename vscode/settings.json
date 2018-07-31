@@ -37,6 +37,9 @@
     // Enable/disable JavaScript validation.
     "javascript.validate.enable": false,
 
+    // Require a 'prettierconfig' to format
+    "prettier.requireConfig": true,
+
     // Enable usage data and errors to be sent to Microsoft.
     "telemetry.enableTelemetry": false,
 
@@ -61,5 +64,5 @@
     // 'newUntitledFile' to open a new untitled file (only when not opening a folder).
     "workbench.startupEditor": "newUntitledFile",
 
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
 }
