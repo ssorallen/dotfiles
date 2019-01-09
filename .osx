@@ -143,7 +143,7 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-# Use a modified version of the Solarized Dark theme by default in Terminal.app
+# Use a the Pro theme by default in Terminal.app
 osascript <<EOD
 
 tell application "Terminal"
@@ -171,7 +171,11 @@ defaults write com.apple.dt.Xcode ApplePersistenceIgnoreState YES
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "cfprefsd" "Dock" "Finder" "Mail" "Messages" "Safari" \
+for app in "cfprefsd" \
+  "Dock" \
+  "Finder" \
+  "Messages" \
+  "Safari" \
   "SystemUIServer"; do
   killall "${app}" > /dev/null 2>&1
 done
