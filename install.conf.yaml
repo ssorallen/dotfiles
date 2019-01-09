@@ -4,12 +4,6 @@
     ~/.bash: .bash/
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
-    ~/.atom/config.cson:
-      force: true
-      path: atom/config.cson
-    ~/.atom/keymap.cson:
-      force: true
-      path: atom/keymap.cson
     ~/.gemrc: .gemrc
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
