@@ -29,7 +29,7 @@ use the same Git configuration but different Git users.
 
 ### Setting Mac OS Defaults
 
-".macos" sets my preferred settings for OS X itself. The default `./install`
+".macos" sets my preferred settings for Mac OS itself. The default `./install`
 command does not run this because it can be expensive to run.
 
 1. `./.macos`
