@@ -27,7 +27,7 @@ use the same Git configuration but different Git users.
          name = Lois Lane
          email = llane@dailyplanet.com
 
-### Setting Mac OS X Defaults
+### Setting Mac OS Defaults
 
 ".macos" sets my preferred settings for OS X itself. The default `./install`
 command does not run this because it can be expensive to run.
