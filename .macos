@@ -31,6 +31,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Show day of week, month, day, and 24-hour clock, like "Thu Jan 10 15:34"
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
