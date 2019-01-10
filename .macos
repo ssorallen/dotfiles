@@ -34,6 +34,9 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Show day of week, month, day, and 24-hour clock, like "Thu Jan 10 15:34"
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm"
 
+# Show battery percentage in menubar
+defaults write com.apple.menuextra.battery ShowPercent -string YES
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
