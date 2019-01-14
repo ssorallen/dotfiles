@@ -21,6 +21,29 @@
     // when `editor.detectIndentation` is on.
     "editor.tabSize": 2,
 
+    "eslint.autoFixOnSave": true,
+
+    "eslint.options": {
+        "extensions": [ ".js", ".vue" ]
+    },
+
+    "eslint.packageManager": "yarn",
+
+    "eslint.validate": [
+        {
+            "autoFix": true,
+            "language": "vue"
+        },
+        {
+            "autoFix": true,
+            "language": "javascript"
+        },
+        {
+            "autoFix": true,
+            "language": "javascriptreact"
+        }
+    ],
+
     // When enabled, insert a final new line at the end of the file when saving it.
     "files.insertFinalNewline": true,
 
@@ -50,6 +73,8 @@
     // Enable/disable TypeScript validation.
     "typescript.validate.enable": false,
 
+    "window.zoomLevel": 0,
+
     "workbench.colorTheme": "Monokai",
 
     // Specifies the icon theme used in the workbench.
@@ -62,7 +87,5 @@
     // Controls which editor is shown at startup, if none is restored from the previous session.
     // Select 'none' to start without an editor, 'welcomePage' to open the Welcome page (default),
     // 'newUntitledFile' to open a new untitled file (only when not opening a folder).
-    "workbench.startupEditor": "newUntitledFile",
-
-    "window.zoomLevel": 0,
+    "workbench.startupEditor": "newUntitledFile"
 }
