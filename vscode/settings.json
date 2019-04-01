@@ -47,15 +47,17 @@
     // When enabled, insert a final new line at the end of the file when saving it.
     "files.insertFinalNewline": true,
 
-    "flow.useNPMPackagedFlow": true,
-
     // When enabled, will trim trailing whitespace when you save a file.
     "files.trimTrailingWhitespace": true,
+
+    "flow.useNPMPackagedFlow": true,
 
     // Format JavaScript files on save (using Prettier)
     "[javascript]": {
         "editor.formatOnSave": true
     },
+
+    "javascript.format.enable": false,
 
     // Enable/disable JavaScript validation.
     "javascript.validate.enable": false,
@@ -72,6 +74,8 @@
 
     // Enable/disable TypeScript validation.
     "typescript.validate.enable": false,
+
+    "window.title": "${activeEditorShort}${separator}${rootPath}",
 
     "window.zoomLevel": 0,
 
