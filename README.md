@@ -33,3 +33,8 @@ use the same Git configuration but different Git users.
 command does not run this because it can be expensive to run.
 
 1. `./.macos`
+
+### Installing Tools via Homebrew
+
+1. Install Homebrew via instructions on https://brew.sh/
+2. `./brew.sh`
