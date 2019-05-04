@@ -3,6 +3,7 @@
 
 [alias]
   a = add
+  b = branch
   c = commit
   clean-pr = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
   clean-merged = "!git branch --merged | grep -v '\\*\\|master' | xargs -n 1 git branch -d"
