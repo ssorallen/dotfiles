@@ -14,6 +14,12 @@
   # Check out a pull request from GitHub as a branch named "pr/<Number>"
   pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
 
+  # Matches its acronym: 'pull upstream master'
+  pum = "!git pull upstream master"
+
+  # Create and track a branch on origin with same name as current local branch
+  puo = "!git rev-parse --abbrev-ref HEAD | xargs -n 1 git push -u origin"
+
   s = status
 
 [color]
