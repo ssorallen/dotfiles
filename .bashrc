@@ -1,8 +1,12 @@
 # Sleep the display, which then requires a password (go AFK)
 alias afk="pmset displaysleepnow"
 
-# Simpler Git access
+# Set up Git tab completion
+source ~/git/git-completion.bash
+
+# Simpler Git access along with tab completion for "g"
 alias g="git"
+__git_complete g _git
 
 # Simpler Mercurial access
 alias h="hg"

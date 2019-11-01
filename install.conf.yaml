@@ -20,6 +20,7 @@
     ~/bin/subl:
       create: true
       path: "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+    ~/git: git
 
 - shell:
     - ["git submodule update --init --recursive", "Installing/updating submodules"]
