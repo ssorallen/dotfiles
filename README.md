@@ -9,7 +9,10 @@ various settings files to the proper locations. Where each settings file
 will link is defined in "install.conf.yml".
 
 1. `git clone https://github.com/ssorallen/dotfiles.git`
-2. `./install`
+2. Install [oh-my-zsh][0]
+
+      `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+3. `./install`
 
 ### Configuring a Git user
 
@@ -38,3 +41,5 @@ command does not run this because it can be expensive to run.
 
 1. Install Homebrew via instructions on https://brew.sh/
 2. `./brew.sh`
+
+[0]: https://ohmyz.sh/#install
