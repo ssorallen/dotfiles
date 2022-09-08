@@ -1,14 +1,17 @@
+- defaults:
+    link:
+      relink: true
+
 - clean: ['~']
 
 - link:
     ~/.bash: .bash/
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
-    ~/.gemrc: .gemrc
     ~/.gitconfig: .gitconfig
     ~/.gitignore: .gitignore
-    ~/.hgrc: .hgrc
     ~/.vimrc: .vimrc
+    ~/.zprofile: .zprofile
     ~/.zshrc:
       force: true
       path: '.zshrc'
@@ -25,6 +28,3 @@
       path: "/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
     ~/git: git
     ~/zsh: zsh
-
-- shell:
-    - ["git submodule update --init --recursive", "Installing/updating submodules"]
