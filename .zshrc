@@ -36,7 +36,7 @@ server() {
 }
 
 # Who doesn't like VIM?
-export EDITOR=vi
+export EDITOR='vim'
 
 # Disable XON/XOFF in order to enable Ctrl-S forward searching through command
 # history.
@@ -46,3 +46,19 @@ export EDITOR=vi
 # Add Visual Studio Code command (code)
 # See https://code.visualstudio.com/docs/setup/mac
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
+# Sleep the display, which then requires a password (go AFK)
+alias afk="pmset displaysleepnow"
+
+# Simpler Git access along with tab completion for "g"
+alias g="git"
+
+# Preferred `ls` output.
+# * -G: enable colorized output
+# * -a: include directories starting with a dot (.)
+# * -p: write a slash (/) after each directory
+alias ls="ls -Gap"
+
+# "exclude grep". An alias for `grep` that excludes common directories that
+# shouldn't be searched.
+alias xg="grep -I --exclude-dir=node_modules -r"
