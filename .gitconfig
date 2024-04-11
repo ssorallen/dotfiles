@@ -7,6 +7,7 @@
   c = commit
   clean-pr = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
   clean-merged = "!git branch --merged | grep -v '\\*\\|main' | xargs -n 1 git branch -d"
+  prune-squashed = "!git checkout -q main && git for-each-ref refs/heads/ \"--format=%(refname:short)\" | while read branch; do mergeBase=$(git merge-base main $branch) && [[ $(git cherry main $(git commit-tree $(git rev-parse \"$branch^{tree}\") -p $mergeBase -m _)) == \"-\"* ]] && git branch -D $branch; done"
   co = checkout
   d = diff
   lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(bold)%s%Creset %Cgreen(%cr) %C(bold blue)<%an>' --abbrev-commit
