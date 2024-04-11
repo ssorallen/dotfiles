@@ -9,24 +9,6 @@ fi
 # used for linking to Sublime Text's `subl` shortcut, for example.
 export PATH=$PATH:~/bin
 
-# Improved Sublime Text command that opens a .sublime-project file in the target
-# directory if it exists, otherwise falls back to default behavior.
-sbl() {
-  if [[ $# -lt 1 ]]
-  then
-    subl
-    return
-  fi
-
-  sublime_project_file=`find $1 -name "*.sublime-project" -maxdepth 1`
-  if [[ -z $sublime_project_file ]]
-  then
-    subl $1
-  else
-    subl $sublime_project_file
-  fi
-}
-
 # Start a SimpleHTTPServer on 127.0.0.1 (rather than the default 0.0.0.0). The
 # first argument after the command can be provided to change the port.
 server() {
