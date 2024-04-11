@@ -6,7 +6,7 @@
   b = branch
   c = commit
   clean-pr = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
-  clean-merged = "!git branch --merged | grep -v '\\*\\|master' | xargs -n 1 git branch -d"
+  clean-merged = "!git branch --merged | grep -v '\\*\\|main' | xargs -n 1 git branch -d"
   co = checkout
   d = diff
   lg = log --branches --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %C(bold)%s%Creset %Cgreen(%cr) %C(bold blue)<%an>' --abbrev-commit
@@ -37,8 +37,11 @@
 [credential]
   helper = osxkeychain
 
+[init]
+  defaultBranch = main
+
 [pager]
-	branch = false
+  branch = false
 
 [push]
   default = simple
