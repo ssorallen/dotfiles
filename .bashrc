@@ -14,7 +14,7 @@ export PATH=$PATH:~/bin
 server() {
   PORT=${1:-8000}
   echo "Serving HTTP on 127.0.0.1 port ${PORT} ..."
-  python -c "import BaseHTTPServer as bhs, SimpleHTTPServer as shs; bhs.HTTPServer(('127.0.0.1', ${PORT}), shs.SimpleHTTPRequestHandler).serve_forever()"
+  python -c "from http.server import HTTPServer, SimpleHTTPServer as shs; HTTPServer(('127.0.0.1', ${PORT}), shs.SimpleHTTPRequestHandler).serve_forever()"
 }
 
 export CLICOLOR=1
