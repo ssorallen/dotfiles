@@ -1,10 +1,3 @@
-# Initialize [`rbenv`](https://github.com/sstephenson/rbenv) to manage Ruby
-# versions if it exists.
-if which rbenv > /dev/null; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)";
-fi
-
 # Allow a user-specific bin directory as a subdir of the home directory. This is
 # used for linking to Sublime Text's `subl` shortcut, for example.
 export PATH=$PATH:~/bin
