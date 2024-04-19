@@ -1,95 +1,74 @@
 {
-    // Format CSS files on save (using Prettier)
-    "[css]": {
-        "editor.formatOnSave": true
-    },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
 
-    // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
-    "editor.lineHeight": 17,
+  "editor.formatOnSave": true,
 
-    // Controls if the minimap is shown
-    "editor.minimap.enabled": true,
+  // Controls if the minimap is shown
+  "editor.minimap.enabled": false,
 
-    // Columns at which to show vertical rulers
-    "editor.rulers": [80, 100],
+  // Columns at which to show vertical rulers
+  "editor.rulers": [80, 100],
 
-    // Controls how the editor should render whitespace characters, possibilities are 'none',
-    // 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
-    "editor.renderWhitespace": "all",
+  // Controls how the editor should render whitespace characters, possibilities are 'none',
+  // 'boundary', and 'all'. The 'boundary' option does not render single spaces between words.
+  "editor.renderWhitespace": "all",
 
-    // The number of spaces a tab is equal to. This setting is overriden based on the file contents
-    // when `editor.detectIndentation` is on.
-    "editor.tabSize": 2,
+  // The number of spaces a tab is equal to. This setting is overriden based on the file contents
+  // when `editor.detectIndentation` is on.
+  "editor.tabSize": 2,
 
-    "eslint.autoFixOnSave": true,
+  // When enabled, insert a final new line at the end of the file when saving it.
+  "files.insertFinalNewline": true,
 
-    "eslint.options": {
-        "extensions": [ ".js", ".vue" ]
-    },
+  // When enabled, will trim trailing whitespace when you save a file.
+  "files.trimTrailingWhitespace": true,
 
-    "eslint.packageManager": "yarn",
+  // Enable usage data and errors to be sent to Microsoft.
+  "telemetry.enableTelemetry": false,
 
-    "eslint.validate": [
-        {
-            "autoFix": true,
-            "language": "vue"
-        },
-        {
-            "autoFix": true,
-            "language": "javascript"
-        },
-        {
-            "autoFix": true,
-            "language": "javascriptreact"
-        }
-    ],
+  // Enable crash reports to be sent to Microsoft.
+  // This option requires restart to take effect.
+  "telemetry.enableCrashReporter": false,
 
-    // When enabled, insert a final new line at the end of the file when saving it.
-    "files.insertFinalNewline": true,
+  "window.title": "${activeEditorShort}${separator}${rootPath}",
 
-    // When enabled, will trim trailing whitespace when you save a file.
-    "files.trimTrailingWhitespace": true,
+  // Specifies the icon theme used in the workbench.
+  "workbench.iconTheme": null,
 
-    "flow.useNPMPackagedFlow": true,
+  // Controls if opened editors should show with an icon or not. This requires an icon theme to be
+  // enabled as well.
+  "workbench.editor.showIcons": false,
 
-    // Format JavaScript files on save (using Prettier)
-    "[javascript]": {
-        "editor.formatOnSave": true
-    },
-
-    "javascript.format.enable": false,
-
-    // Enable/disable JavaScript validation.
-    "javascript.validate.enable": false,
-
-    // Require a 'prettierconfig' to format
-    "prettier.requireConfig": true,
-
-    // Enable usage data and errors to be sent to Microsoft.
-    "telemetry.enableTelemetry": false,
-
-    // Enable crash reports to be sent to Microsoft.
-    // This option requires restart to take effect.
-    "telemetry.enableCrashReporter": false,
-
-    // Enable/disable TypeScript validation.
-    "typescript.validate.enable": false,
-
-    "window.title": "${activeEditorShort}${separator}${rootPath}",
-
-    "window.zoomLevel": 0,
-
-    "workbench.colorTheme": "Monokai",
-
-    // Specifies the icon theme used in the workbench.
-    "workbench.iconTheme": null,
-
-    // Controls if opened editors should show with an icon or not. This requires an icon theme to be
-    // enabled as well.
-    "workbench.editor.showIcons": false,
-
-    // Controls which editor is shown at startup, if none is restored from the previous session.
-    // Select 'none' to start without an editor, 'welcomePage' to open the Welcome page (default),
-    // 'newUntitledFile' to open a new untitled file (only when not opening a folder).
-    "workbench.startupEditor": "newUntitledFile"
+  // Controls which editor is shown at startup, if none is restored from the previous session.
+  // Select 'none' to start without an editor, 'welcomePage' to open the Welcome page (default),
+  // 'newUntitledFile' to open a new untitled file (only when not opening a folder).
+  "workbench.startupEditor": "newUntitledFile",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Monokai",
+  "editor.inlineSuggest.enabled": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.requireConfig": true,
+  "prettier.enable": false
 }
